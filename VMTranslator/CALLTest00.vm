@@ -1,0 +1,4 @@
+push constant 1
+push constant 10
+call Add.add 2
+pop local 0

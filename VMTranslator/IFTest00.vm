@@ -1,0 +1,7 @@
+push constant 10
+if-goto TRUE
+push constant 0
+goto END
+label TRUE
+push constant 42
+label END

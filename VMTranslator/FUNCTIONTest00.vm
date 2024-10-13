@@ -1,0 +1,5 @@
+function Sub.sub 0
+    push constant 1
+    push constant 0
+    sub
+    return

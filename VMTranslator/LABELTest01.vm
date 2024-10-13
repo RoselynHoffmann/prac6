@@ -1,0 +1,6 @@
+push constant 100
+pop local 0
+goto SKIP
+push constant 700
+label SKIP
+push local 0

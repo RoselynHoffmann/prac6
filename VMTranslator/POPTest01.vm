@@ -1,0 +1,4 @@
+push constant 60
+pop temp 1
+push local 0
+pop static 0

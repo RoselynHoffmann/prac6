@@ -115,6 +115,8 @@ string VMTranslator::vm_pop(string segment, int offset){
     return result;
 }
 
+//idk doing all ig
+
 string VMTranslator::vm_add()
 {
 	string result = "// Add\n";
@@ -376,8 +378,7 @@ string VMTranslator::vm_return() {
 	result += "M=D\n";
 
 	result += "@SP\n";
-	result += "M=M-1\n";
-    result += "A = M\n";
+	result += "AM=M-1\n";
 	result += "D=M\n";
 	result += "@ARG\n";
 	result += "A=M\n";

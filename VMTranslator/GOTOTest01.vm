@@ -1,0 +1,13 @@
+push constant 10
+pop local 0
+label LOOP
+push local 0
+push constant 1
+sub
+pop local 0
+push local 0
+push constant 10
+gt
+if-goto LOOP
+goto END
+label END

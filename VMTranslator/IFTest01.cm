@@ -1,0 +1,7 @@
+push constant 0
+if-goto SKIP
+push constant 99
+goto FINISH
+label SKIP
+push constant 10
+label FINISH
