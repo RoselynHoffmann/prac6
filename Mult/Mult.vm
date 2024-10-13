@@ -1,0 +1,60 @@
+// Calculates a = x * y
+// a is a local variable
+// x & y are static variables
+
+push constant 0
+pop local 0
+
+
+label LARGER 
+push static 0
+push static 1
+gt 
+if-goto SWITCH
+push static 0 //switcherony
+pop temp 0
+push static 1
+pop temp 1
+
+label SWITCH
+push static 1 //switcherony
+pop temp 0
+push static 0
+pop temp 1
+
+label Y_CHECK
+push temp 1
+push constant 0
+lt
+if-goto Y_NEG
+goto LOOP
+
+label Y_NEG
+push temp 1
+neg 
+pop temp 1
+
+push temp 0 
+neg 
+pop temp 0 
+
+label LOOP
+push temp 1
+push constant 0
+eq
+if-goto END
+
+push local 0
+push temp 0
+add
+pop local 0
+
+push temp 1
+push constant 1
+sub
+pop temp 1
+goto LOOP
+
+label END
+goto END
+
